@@ -1,1 +1,6 @@
-check50: true
+check50:
+  checks:
+    hello world:
+      - run: make syntax
+        stdout: Hello, world!
+        exit: 0
