@@ -12,6 +12,6 @@ def compiles():
     check50.c.compile("syntax.c", lcs50=True)
 
 @check50.check(compiles)
-def emma():
+def output_check():
     """Checks output"""
     check50.run("./syntax").stdout("This is CS50AP!\n").exit()
