@@ -1,0 +1,6 @@
+check50:
+  checks:
+    syntax:
+      - run: make hello
+        stdout: This is CS50AP!
+        exit: 0
