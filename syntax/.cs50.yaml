@@ -1,6 +1,1 @@
-check50:
-  checks:
-    syntax_check:
-    - run: make syntax
-      stdout: Test
-      exit: 0
+check50: true
