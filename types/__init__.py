@@ -14,4 +14,4 @@ def compiles():
 @check50.check(compiles)
 def test0():
     """input of Dave yields Hello Dave, here is the data you entered..."""
-    check50.run("./datatypes").stdin("Dave").stdin("1994001").stdin("33").stdin("3.4").stdin("3.4")stdout()
+    check50.run("./datatypes").stdin("Dave").stdin("1994001").stdin("33").stdin("3.4").stdin("3.4").stdout()
