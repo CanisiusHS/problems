@@ -14,17 +14,17 @@ def compiles():
 @check50.check()
 def check_5():
     """responds to 5"""
-    check50.run("./while").stdin("5").stdout("Your number can be doubled 4 times before reaching 100!\n").exit(0)
+    check50.run("./while").stdin("5").stdout("Your number can be doubled 4 times before exceeding 100!\n").exit(0)
 
 @check50.check()
 def check_10():
     """responds to 10"""
-    check50.run("./while").stdin("10").stdout("Your number can be doubled 3 times before reaching 100!\n").exit(0)
+    check50.run("./while").stdin("10").stdout("Your number can be doubled 3 times before exceeding 100!\n").exit(0)
 
 @check50.check()
 def check_99():
     """responds to 99 (edge case)"""
-    check50.run("./while").stdin("99").stdout("Your number can be doubled 0 times before reaching 100!\n").exit(0)
+    check50.run("./while").stdin("99").stdout("Your number can be doubled 0 times before exceeding 100!\n").exit(0)
 
 @check50.check()
 def test_reject_foo():
