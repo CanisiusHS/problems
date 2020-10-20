@@ -26,10 +26,10 @@ def check_75():
     """responds to 75 = C"""
     check50.run("./booleans").stdin("75").stdout("You get a C!\n).exit(0)
 
-@check50.check()
-def check_15():
-    """responds to 15"""
-    check50.run("./booleans").stdin("15").stdout("You need to work harder to pass this class!\n").exit(0)
+# @check50.check()
+# def check_15():
+    # """responds to 15"""
+    # check50.run("./booleans").stdin("15").stdout("You need to work harder to pass this class!\n").exit(0)
 
 # @check50.check()
 # def check_150():
