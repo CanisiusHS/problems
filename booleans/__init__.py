@@ -19,12 +19,12 @@ def check_95():
 @check50.check()
 def check_85():
     """responds to 85 = B"""
-    check50.run("./booleans").stdin("85").stdout("You get an B!\n).exit(0)
+    check50.run("./booleans").stdin("85").stdout("You get a B!\n).exit(0)
 
 @check50.check()
 def check_75():
     """responds to 75 = C"""
-    check50.run("./booleans").stdin("75").stdout("You get an C!\n).exit(0)
+    check50.run("./booleans").stdin("75").stdout("You get a C!\n).exit(0)
 
 @check50.check()
 def check_15():
