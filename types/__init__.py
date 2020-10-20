@@ -15,7 +15,9 @@ def compiles():
 def test0():
     """input of Dave yields Hello Dave, here is the data you entered..."""
     check50.run("./datatypes").stdin("Dave\n1994001\n").stdout("".join([
-        "20 20 20\n", "50 50 50\n", "80 80 80\n",
-        "127 127 127\n", "137 137 137\n", "147 147 147\n",
-        "210 210 210\n", "230 230 230\n", "248 248 248\n"
+        "Hello Dave, here is the data you entered...\n",
+        "Student ID: 1994001\n",
+        "Age: 34\n",
+        "GPA: 3.2\n",
+        "The value of pi is 3.1415926535\n"
     ]))
