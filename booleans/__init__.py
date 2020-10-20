@@ -11,10 +11,10 @@ def compiles():
     """booleans.c compiles"""
     check50.c.compile("booleans.c", lcs50=True)
 
-# @check50.check()
-# def check_95():
-    # """responds to 95"""
-    # check50.run("./booleans").stdin("95").stdout("You get an A!\n).exit(0)
+@check50.check()
+def check_95():
+    """responds to 95"""
+    check50.run("./booleans").stdin("95").stdout("You get an A!\n).exit(0)
 #
 # @check50.check()
 # def check_85():
