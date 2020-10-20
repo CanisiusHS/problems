@@ -17,7 +17,7 @@ def check_95():
     check50.run("./booleans").stdin("95").stdout("You get an A!\n).exit(0)
 
 @check50.check()
-def check_95():
+def check_85():
     """responds to 85 = B"""
     check50.run("./booleans").stdin("85").stdout("You get an B!\n).exit(0)
 
