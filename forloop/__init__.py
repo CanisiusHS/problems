@@ -8,8 +8,7 @@ def exists():
 
 @check50.check(exists)
 def compiles():
-    """forloop in variable:
-        pass.c compiles"""
+    """forloop.c compiles"""
     check50.c.compile("forloop.c", lcs50=True)
 
 @check50.check()
