@@ -41,7 +41,7 @@ def test_reject_foo():
     """rejects a non-numeric input of "foo" """
     check50.run("./booleans").stdin("foo").reject()
 
-@check50.check()
-def test_reject_float():
-    """rejects a floating-point number 55.5 """
-    check50.run("./booleans").stdin("55.5").reject()
+#@check50.check()
+#def test_reject_float():
+#    """rejects a floating-point number 55.5 """
+#    check50.run("./booleans").stdin("55.5").reject()
