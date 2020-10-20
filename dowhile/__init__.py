@@ -14,7 +14,7 @@ def compiles():
 @check50.check()
 def check_5():
     """responds to 5"""
-    check50.run("./dowhile").stdin("5").stdout("Your number can be doubled 4 times before exceeding 100!\n").exit(0)
+    check50.run("./dowhile").stdin("5").stdout("Thank you for the 5!\n").exit(0)
 
 @check50.check()
 def check_10():
