@@ -14,4 +14,4 @@ def compiles():
 @check50.check()
 def cat_moon_25():
     """Testing "cat" "moon" and "25.5"""
-    check.run("./placeholders").stdin("cat").stdin("moon").stdin("25.5").stdout("The cow jumped over the moon, 25.500000 times\n").exit()
+    check50.run("./placeholders").stdin("cat").stdin("moon").stdin("25.5").stdout("The cow jumped over the moon, 25.500000 times\n").exit()
