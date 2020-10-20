@@ -31,10 +31,10 @@ def check_15():
     """responds to 15"""
     check50.run("./booleans").stdin("15").stdout("You need to work harder to pass this class!\n").exit(0)
 
-@check50.check()
-def check_150():
-    """responds to 150"""
-    check50.run("./booleans").stdin("150").stdout("You need to work harder to pass this class!\n").exit(0)
+# @check50.check()
+# def check_150():
+    # """responds to 150"""
+    # check50.run("./booleans").stdin("150").stdout("You need to work harder to pass this class!\n").exit(0)
 
 #@check50.check()
 #def test_reject_foo():
