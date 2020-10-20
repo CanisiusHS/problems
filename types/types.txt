@@ -1,0 +1,5 @@
+Hello Eric, here is the data you entered...
+Student ID: 1994001
+Age: 33
+GPA: 3.4
+The value of pi is 3.1413123973
