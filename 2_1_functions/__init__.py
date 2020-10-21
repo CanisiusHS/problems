@@ -14,7 +14,7 @@ def compiles():
 @check50.check()
 def check_12():
     """responds to 12"""
-    check50.run("./functions").stdin("12").stdout("TMy positive int is 12.\n").exit(0)
+    check50.run("./functions").stdin("12").stdout("My positive int is 12.\n").exit(0)
 
 @check50.check()
 def test_reject_foo():
