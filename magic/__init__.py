@@ -23,5 +23,5 @@ def test_reject_foo():
 
 @check50.check()
 def test_reject_float():
-   """rejects a floating-point number 0.5 """
+   """rejects a floating-point number 55.5 """
    check50.run("./magic").stdin("55.5").reject()
