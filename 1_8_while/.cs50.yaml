@@ -1,7 +1,7 @@
 check50:
   files: &check50_files
     - !exclude "*"
-    - !require datatypes.c
+    - !require while.c
 
 submit50:
   files: *check50_files
