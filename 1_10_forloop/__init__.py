@@ -11,7 +11,7 @@ def compiles():
     """forloop.c compiles"""
     check50.c.compile("forloop.c", lcs50=True)
 
-@check50.check()
+@check50.check(compiles)
 def right_sum():
     """checks the math is right"""
     check50.run("./forloop").stdout("55").exit(0)

@@ -11,7 +11,7 @@ def compiles():
     """placeholders.c compiles"""
     check50.c.compile("placeholders.c", lcs50=True)
 
-@check50.check()
+@check50.check(compiles)
 def cat_moon_25():
     """Testing "cow" "moon" and "25.5"""
     check50.run("./placeholders").stdin("cow").stdin("moon").stdin("25.5").stdout("The cow jumped over the moon, 25.500000 times\n").exit()

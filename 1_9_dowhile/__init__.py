@@ -11,32 +11,32 @@ def compiles():
     """dowhile.c compiles"""
     check50.c.compile("dowhile.c", lcs50=True)
 
-@check50.check()
+@check50.check(compiles)
 def check_5():
     """responds to 5"""
     check50.run("./dowhile").stdin("5").stdout("Thank you for the 5!\n").exit(0)
 
-@check50.check()
+@check50.check(compiles)
 def check_10():
     """responds to 10"""
     check50.run("./dowhile").stdin("10").stdout("Thank you for the 10!\n").exit(0)
 
-@check50.check()
+@check50.check(compiles)
 def check_neg_one():
     """rejects a number < 10"""
     check50.run("./dowhile").stdin("-1").reject()
 
-@check50.check()
+@check50.check(compiles)
 def check_99():
     """rejects a number > 10"""
     check50.run("./dowhile").stdin("99").reject()
 
-@check50.check()
+@check50.check(compiles)
 def test_reject_foo():
    """rejects a non-numeric input of "foo" """
    check50.run("./dowhile").stdin("foo").reject()
 
-@check50.check()
+@check50.check(compiles)
 def test_reject_float():
    """rejects a floating-point number 0.5 """
    check50.run("./dowhile").stdin("55.5").reject()
