@@ -13,7 +13,7 @@ def compiles():
 
 @check50.check(compiles)
 def check_12345():
-    """responds to Jerry"""
+    """responds to 12345"""
     check50.run("./array").stdin("1").stdin("2").stdin("3").stdin("4").stdin("5").stdout("Day 0: 1\n").stdout("Day 1: 2\n").stdout("Day 2: 3\n").stdout("Day 3: 4\n").stdout("Day 4: 5\n").exit(0)
 
 @check50.check(compiles)
