@@ -1,7 +1,7 @@
 check50:
   files: &check50_files
     - !exclude "*"
-    - !require strings.c
+    - !require string.c
 
 submit50:
   files: *check50_files
