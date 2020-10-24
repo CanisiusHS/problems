@@ -11,6 +11,7 @@ def compiles():
     """string.c compiles"""
     check50.c.compile("string.c", lcs50=True)
 
-def check_12():
+@check50.check(compiles)
+def check_Jerry():
     """responds to Jerry"""
     check50.run("./string").stdin("Jerry").stdout("J\n").stdout("e\n").stdout("r\n").stdout("r\n").stdout("y\n").exit(0)
