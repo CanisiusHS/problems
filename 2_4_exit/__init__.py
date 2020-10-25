@@ -22,6 +22,6 @@ def check_null():
     check50.run("./exit").exit(1)
 
 @check50.check(compiles)
-def check_null():
+def check_rick_and_morty():
     """responds to > 2 args"""
     check50.run("./exit Rick and Morty").exit(1)
