@@ -19,4 +19,4 @@ def check_1010101111():
 @check50.check(compiles)
 def check_12():
     """responds to 12"""
-    check50.run("./buggy").stdin("12").reject()
+    check50.run("./buggy").stdin("12").stdout("Invalid input. Try again!").exit()
