@@ -1,7 +1,7 @@
 check50:
   files: &check50_files
     - !exclude "*"
-    - !include bubble.c
+    - !include selection.c
 
 submit50:
   files: *check50_files
