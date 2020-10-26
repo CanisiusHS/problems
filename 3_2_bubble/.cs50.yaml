@@ -1,7 +1,7 @@
 check50:
   files: &check50_files
     - !exclude "*"
-    - !require linear.c
+    - !require bubble.c
 
 submit50:
   files: *check50_files
