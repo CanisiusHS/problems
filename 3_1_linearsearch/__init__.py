@@ -19,7 +19,7 @@ def check_72():
 @check50.check(compiles)
 def check_72():
     """responds to 2"""
-    check50.run("./linear").stdin("2").stdout("Sorry better luck next time!!\n").exit()
+    check50.run("./linear").stdin("2").stdout("Sorry better luck next time!\n").exit()
 
 
 @check50.check(compiles)
