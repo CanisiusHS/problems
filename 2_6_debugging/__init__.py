@@ -14,7 +14,7 @@ def compiles():
 @check50.check(compiles)
 def check_1010101111():
     """responds to 1010101111"""
-    check50.run("./buggy").stdin("1010101111").stdout("687").reject()
+    check50.run("./buggy").stdin("1010101111").stdout("687").exit()
 
 @check50.check(compiles)
 def check_12():
