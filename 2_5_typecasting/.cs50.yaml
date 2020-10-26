@@ -4,4 +4,4 @@ check50:
     - !require typecasting.c
 
 submit50:
-  files: *check50_filess
+  files: *check50_files
