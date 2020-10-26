@@ -24,5 +24,5 @@ def check_72():
 
 @check50.check(compiles)
 def check_12():
-    """responds to 12"""
+    """responds to Plumbus"""
     check50.run("./linear").stdin("Plumbus").reject()
