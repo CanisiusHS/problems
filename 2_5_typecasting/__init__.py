@@ -4,7 +4,7 @@ import check50.c
 @check50.check()
 def exists():
     """typecasting.c exists"""
-    check50.exists("exit.c")
+    check50.exists("typecasting.c")
 
 @check50.check(exists)
 def compiles():
