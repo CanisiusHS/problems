@@ -14,4 +14,4 @@ def compiles():
 @check50.check(compiles)
 def check_gazorpazorp():
     """responds to Gazorpazorp"""
-    check50.run("./typecasting")stdin("Gazorpazorp").stdout("Hb{psqb{psq").exit(0)
+    check50.run("./typecasting").stdin("Gazorpazorp").stdout("Hb{psqb{psq").exit(0)
