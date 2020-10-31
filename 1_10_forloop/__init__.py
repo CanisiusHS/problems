@@ -14,4 +14,4 @@ def compiles():
 @check50.check(compiles)
 def right_sum():
     """checks the math is right"""
-    check50.run("./forloop").stdout("55").exit(0)
+    check50.run("./forloop").stdout("55\n").exit(0)
