@@ -27,6 +27,6 @@ def test_reject_foo():
    check50.run("./binary").stdin("foo").reject()
 
 @check50.check(compiles)
-def test_reject_foo():
+def test_reject_float():
    """rejects a non-int input of "15.5" """
    check50.run("./binary").stdin("15.5").reject()
