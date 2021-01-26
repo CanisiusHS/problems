@@ -11,15 +11,15 @@ def compiles():
     """binary.c compiles"""
     check50.c.compile("binary.c", lcs50=True)
 
-@check50.check(compiles)
-def check_55():
-    """Checks if 55 is in the list"""
-    check50.run("./binary").stdin("55").stdout("Not found!\n).exit(0)
-#
 # @check50.check(compiles)
-# def check_14():
-#     """Checks if 14 is in the list"""
-#     check50.run("./binary").stdin("14").stdout("Found!\n).exit()
+# def check_55():
+#     """Checks if 55 is in the list"""
+#     check50.run("./binary").stdin("55").stdout("Not found!\n).exit(0)
+#
+@check50.check(compiles)
+def check_14():
+    """Checks if 14 is in the list"""
+    check50.run("./binary").stdin("14").stdout("Found!\n).exit()
 #
 # @check50.check(compiles)
 # def test_reject_foo():
