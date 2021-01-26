@@ -12,9 +12,9 @@ def compiles():
     check50.c.compile("binary.c", lcs50=True)
 
 @check50.check(compiles)
-def check_50():
-    """Checks if 50 is in the list"""
-    check50.run("./binary").stdin("50").stdout("Not found!\n).exit()
+def check_55():
+    """Checks if 55 is in the list"""
+    check50.run("./binary").stdin("55").stdout("Not found!\n).exit()
 
 @check50.check(compiles)
 def check_14():
