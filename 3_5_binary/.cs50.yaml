@@ -1,7 +1,7 @@
 check50:
   files: &check50_files
     - !exclude "*"
-    - !include binary.c
+    - !require binary.c
 
 submit50:
   files: *check50_files
