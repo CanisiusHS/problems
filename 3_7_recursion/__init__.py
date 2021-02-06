@@ -29,4 +29,4 @@ def test_reject_foo():
 @check50.check(compiles)
 def test_reject_float():
     """rejects a non-int input of "15.5" """
-    check50.run("./recursion").stdin("15.5".reject()
+    check50.run("./recursion").stdin("15.5").reject()
