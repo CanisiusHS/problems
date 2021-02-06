@@ -12,7 +12,7 @@ def compiles():
     check50.c.compile("recursion.c", lcs50=True)
 
 @check50.check(compiles)
-def check_basecase
+def check_basecase():
     """Checks if there is a base case"""
     check50.run("./recursion").stdin("1").stdout("The sum of 1 through 1 is: 1\n").exit(0)
     
