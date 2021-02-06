@@ -17,7 +17,7 @@ def check_basecase
     check50.run("./recursion").stdin("1").stdout("The sum of 1 through 1 is: 1\n").exit(0)
     
 @check50.check(compiles)
-def check_55
+def check_55():
     """Checks for the correct output for 55"""
     check50.run("./recursion").stdin("55").stdout("The sum of 1 through 55 is: 1540\n").exit(0) 
 
