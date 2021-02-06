@@ -20,6 +20,7 @@ def check_basecase
 def check_55
     """Checks for the correct output for 55"""
     check50.run("./recursion").stdin("55").stdout("The sum of 1 through 55 is: 1540\n").exit(0) 
+
 @check50.check(compiles)
 def test_reject_foo():
     """rejects a non_numeric input of "foo" """
