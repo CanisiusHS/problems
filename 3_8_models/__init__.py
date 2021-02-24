@@ -19,4 +19,4 @@ def compiles():
 @check50.check(exists)
 def compiles():
   """simulate.c compile"""
-  check50.c.compiles("simulate.c", lcs50=True)
+  check50.c.compile("simulate.c", lcs50=True)
