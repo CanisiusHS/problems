@@ -1,0 +1,8 @@
+check50:
+  files: &check50_files
+    - !exclude "*"
+    - !include monte_hall.c
+    - !include simulate.c
+
+submit50:
+  files: *check50_files
