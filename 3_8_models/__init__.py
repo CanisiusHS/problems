@@ -9,4 +9,4 @@ def exists():
 @check50.check(exists)
 def compiles():
    """monte_hall & simulate.c compile"""
-   check50.c.compile("monte_hall.c", "simulate.c", lcs50=True)
+   check50.c.compile("monte_hall.c", lcs50=True)
