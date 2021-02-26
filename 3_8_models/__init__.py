@@ -5,10 +5,7 @@ import check50.c
 def exists():
    """monte_hall.c & simulate.c exists"""
    check50.exists("monte_hall.c", "simulate.c")
-   
-@check50.check()
 
-    
 @check50.check(exists)
 def compiles():
    """monte_hall & simulate.c compile"""
