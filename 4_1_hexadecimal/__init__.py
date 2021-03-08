@@ -13,12 +13,12 @@ def compiles():
 @check50.check(compiles)
 def test_reject_foo():
     """rejects a non-numeric input of "foo" """
-    check50.run("./hexadecimal").stdin("foo").reject()
+    check50.run("./hexadecimal").stdin("foo").stdout("Please enter a valid hexadecimal number!\n").exit(0)
 
 @check50.check(compiles)
 def test_reject_float():
     """rejects a non-int input of "15.5" """
-    check50.run("./hexadecimal").stdin("15.5").reject()
+    check50.run("./hexadecimal").stdin("15.5").stdout("Please enter a valid hexadecimal number!\n").exit(0)
    
 @check50.check(compiles)
 def check_FF():
@@ -28,7 +28,7 @@ def check_FF():
 @check50.check(compiles)
 def check_1F():
     """Checks if 1F returns proper value"""
-    check50.run("./hexadecimal").stdin("FF").stdout("1f in decimal is 241\n").exit(0)
+    check50.run("./hexadecimal").stdin("1F").stdout("1f in decimal is 241\n").exit(0)
     
 @check50.check(compiles)
 def check_9A():
