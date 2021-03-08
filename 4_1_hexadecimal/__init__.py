@@ -28,12 +28,12 @@ def check_FF():
 @check50.check(compiles)
 def check_1F():
     """Checks if 1F returns proper value"""
-    check50.run("./hexadecimal").stdin("1F").stdout("1f in decimal is 241\n").exit(0)
+    check50.run("./hexadecimal").stdin("1F").stdout("1f in decimal is 31\n").exit(0)
     
 @check50.check(compiles)
 def check_9A():
     """Checks if 9A returns proper value"""
-    check50.run("./hexadecimal").stdin("9A").stdout("9a in decimal is 169\n").exit(0)
+    check50.run("./hexadecimal").stdin("9A").stdout("9a in decimal is 154\n").exit(0)
     
 @check50.check(compiles)
 def check_a():
