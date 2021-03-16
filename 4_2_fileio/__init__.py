@@ -3,7 +3,8 @@ import check50.c
 
 @check50.check()
 def exists():
-   """fileio.c exists"""
+   """files exist"""
+   check50.exists("fileio.c", "copy.txt", "anna.txt")
     
 @check50.check(exists)
 def compiles():
