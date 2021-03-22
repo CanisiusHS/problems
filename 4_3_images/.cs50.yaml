@@ -6,6 +6,7 @@ check50:
     - !include output.bmp
     - !include helpers.h
     - !include helpers.c
+    - !include Makefile
 
 submit50:
   files: *check50_files
