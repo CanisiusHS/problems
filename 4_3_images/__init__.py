@@ -4,7 +4,7 @@ import check50.c
 @check50.check()
 def exists():
    """files exist"""
-   check50.exists("colorize.c", "smiley.bmp", "output.bmp")
+   check50.exists("colorize.c", "smiley.bmp")
 
 @check50.check(exists)
 def compiles():
