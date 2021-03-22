@@ -9,7 +9,7 @@ def exists():
 @check50.check(exists)
 def compiles():
    """colorize.c compiles"""
-   check50.c.compile("colorize.c", lcs50=True)
+   check50.c.compile("colorize.c", "helpers.c", lcs50=True)
 
 @check50.check(compiles)
 def test_reject_foo():
