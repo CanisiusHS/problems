@@ -3,7 +3,6 @@ check50:
     - !exclude "*"
     - !include colorize.c
     - !include smiley.bmp
-    - !include output.bmp
     - !include helpers.h
     - !include helpers.c
     - !include Makefile
