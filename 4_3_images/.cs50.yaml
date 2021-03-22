@@ -4,8 +4,8 @@ check50:
     - !include colorize.c
     - !include smiley.bmp
     - !include output.bmp
-    - !include header.h
-    - !include header.c
+    - !include helpers.h
+    - !include helpers.c
 
 submit50:
   files: *check50_files
