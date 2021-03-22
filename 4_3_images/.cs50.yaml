@@ -5,6 +5,7 @@ check50:
     - !include smiley.bmp
     - !include helpers.h
     - !include helpers.c
+    - !include bmp.h
     - !include Makefile
 
 submit50:
