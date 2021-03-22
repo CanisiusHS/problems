@@ -5,6 +5,7 @@ check50:
     - !include smiley.bmp
     - !include output.bmp
     - !include header.h
+    - !include header.c
 
 submit50:
   files: *check50_files
