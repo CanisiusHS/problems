@@ -4,6 +4,7 @@ check50:
     - !require index.html
     - !require specification.txt
     - !require styles.css
+    - !require assessment.json
     - !include "*.css"
     - !include "*.html"
     - !include "*.js"

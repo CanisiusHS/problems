@@ -8,6 +8,7 @@ check50:
     - !require app.py
     - !require finance.db
     - !require helpers.py
+    - !require assessment.json
 
 submit50:
   files: *check50_files

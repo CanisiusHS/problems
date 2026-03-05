@@ -5,6 +5,7 @@ check50:
     - !require birthdays.db
     - !require static/styles.css
     - !require templates/index.html
+    - !require assessment.json
 
 submit50:
   files: *check50_files

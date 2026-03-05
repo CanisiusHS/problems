@@ -7,6 +7,7 @@ check50:
   files: &check50_files
     - !exclude "*"
     - !require inheritance.c
+    - !require assessment.json
 
 submit50:
   files: *check50_files

@@ -3,6 +3,7 @@ submit50:
     - !exclude "*"
     - !include "*.py"
     - !require cash.py
+    - !require assessment.json
 
 check50:
   files: *submit50_files

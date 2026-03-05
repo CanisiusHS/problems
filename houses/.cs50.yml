@@ -4,6 +4,7 @@ submit50:
     - !include "*.py"
     - !require import.py
     - !require roster.py
+    - !require assessment.json
 
 check50:
   files: *submit50_files

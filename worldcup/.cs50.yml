@@ -10,6 +10,7 @@ check50:
     - !exclude "*"
     - !require tournament.py
     - !require answers.txt
+    - !require assessment.json
 
 submit50:
   files: *check50_files

@@ -3,4 +3,5 @@ submit50:
   files: &submit50_files
     - !exclude "*"
     - !require status.md
+    - !require assessment.json
 

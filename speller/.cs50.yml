@@ -6,6 +6,7 @@ check50:
     - !include "*.md"
     - !exclude speller.c
     - !require dictionary.c
+    - !require assessment.json
 
 submit50:
   files: *check50_files

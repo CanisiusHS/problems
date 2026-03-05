@@ -3,6 +3,7 @@ check50:
     - !exclude "*"
     - !include Makefile
     - !require recover.c
+    - !require assessment.json
 
 submit50:
   files: *check50_files

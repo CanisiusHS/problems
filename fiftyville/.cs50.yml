@@ -3,6 +3,7 @@ check50:
     - !exclude "*"
     - !require "answers.txt"
     - !require "log.sql"
+    - !require assessment.json
 
 submit50:
   files: *check50_files

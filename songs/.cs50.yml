@@ -10,6 +10,7 @@ submit50:
     - !require 6.sql
     - !require 7.sql
     - !require 8.sql
+    - !require assessment.json
     - !include answers.txt
   style: false
 

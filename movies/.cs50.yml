@@ -15,6 +15,7 @@ submit50:
     - !require 11.sql
     - !require 12.sql
     - !require 13.sql
+    - !require assessment.json
   style: false
 
 check50:
