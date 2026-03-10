@@ -1,0 +1,8 @@
+check50:
+  files: &check50_files:
+    - !exclude "*"
+    - !require nhl_standings_2025_26.csv
+    - !require nhl.py
+
+submit50:
+  files: *check50_files
