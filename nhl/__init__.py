@@ -6,7 +6,7 @@ import check50.py
 def exists():
     """nhl.py exists"""
     check50.exists("nhl.py")
-    check50.exists("nhl_standings_2025_26.csv")
+    check50.include("nhl_standings_2025_26.csv")
 
 
 @check50.check(exists)
