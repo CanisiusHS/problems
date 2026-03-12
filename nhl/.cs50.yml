@@ -3,7 +3,6 @@ check50:
     - !exclude "*"
     - !require nhl.py
     - !require nhl_standings_2025_26.csv
-    - !require assessment.json
 
 submit50:
   files: *check50_files
