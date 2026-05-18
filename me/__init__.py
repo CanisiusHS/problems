@@ -1,18 +1,18 @@
 import check50
-import check50.c
+import check50.py
 import re
 
 
 @check50.check()
 def exists():
-    """hello.c exists"""
-    check50.exists("hello.c")
+    """hello.py exists"""
+    check50.exists("hello.py")
 
 
 @check50.check(exists)
 def compiles():
-    """hello.c compiles"""
-    check50.c.compile("hello.c", lcs50=True)
+    """hello.py is valid Python"""
+    check50.py.compile("hello.py")
 
 
 @check50.check(compiles)
@@ -34,11 +34,9 @@ def bowser():
 
 
 def check_name(name):
-    # Define expected, actual outputs
     expected = f"hello, {name}\n"
-    actual = check50.run("./hello").stdin(name).stdout()
+    actual = check50.run("python3 hello.py").stdin(name).stdout()
 
-    # Check output
     if not re.match(regex(name), actual):
         try:
             last_character = actual[-1]

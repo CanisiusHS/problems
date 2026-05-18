@@ -1,20 +1,20 @@
 import check50
-import check50.c
+import check50.py
 
 @check50.check()
 def exists():
-    """credit.c exists"""
-    check50.exists("credit.c")
+    """credit.py exists"""
+    check50.exists("credit.py")
 
 @check50.check(exists)
 def compiles():
-    """credit.c compiles"""
-    check50.c.compile("credit.c", lcs50=True)
+    """credit.py is valid Python"""
+    check50.py.compile("credit.py")
 
 def _test_credit_card(card_number, expected_output):
-    """Helper function to test credit card validation with proper error handling"""
+    """Helper function to test credit card validation"""
     try:
-        check50.run("./credit").stdin(card_number).stdout(expected_output).stdout(check50.EOF).exit(0)
+        check50.run("python3 credit.py").stdin(card_number).stdout(expected_output).stdout(check50.EOF).exit(0)
     except check50.Missing as e:
         raise check50.Failure("Program did not exit after processing input.")
 
