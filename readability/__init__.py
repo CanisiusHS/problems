@@ -29,6 +29,13 @@ def single_sentence_other_punctuation():
 
 
 @check50.check(compiles)
+def single_sentence_complex():
+    """handles a more complex single sentence (Alice in Wonderland)"""
+    text = "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, \"and what is the use of a book,\" thought Alice \"without pictures or conversation?\""
+    check50.run("python3 readability.py").stdin(text).stdout("Grade 8\n").stdout(check50.EOF).exit(0)
+
+
+@check50.check(compiles)
 def multiple_sentences():
     """handles multiple sentences"""
     text = "Harry Potter was a highly unusual boy in many ways. For one thing, he hated the summer holidays more than any other time of year. For another, he really wanted to do his homework, but was forced to do it in secret, in the dead of the night. And he also happened to be a wizard."

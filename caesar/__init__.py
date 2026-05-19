@@ -28,14 +28,14 @@ def too_many_args():
 
 @check50.check(compiles)
 def non_numeric_key():
-    """rejects a non-numeric key"""
-    check50.run("python3 caesar.py HELLO").exit(1)
+    """rejects a key that mixes digits and letters (e.g. '2x')"""
+    check50.run("python3 caesar.py 2x").exit(1)
 
 
 @check50.check(compiles)
-def alphanumeric_key():
-    """rejects a key that mixes letters and digits"""
-    check50.run("python3 caesar.py 1Y").exit(1)
+def alphabetic_key():
+    """rejects a purely alphabetic key (e.g. 'HELLO')"""
+    check50.run("python3 caesar.py HELLO").exit(1)
 
 
 @check50.check(compiles)
