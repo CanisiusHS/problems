@@ -19,7 +19,6 @@ check50:
   files: &check50_files
     - !exclude "*"
     - !require answers.txt
-    - !require assessment.json
 
 submit50:
   files: *check50_files

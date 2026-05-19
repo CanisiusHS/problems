@@ -4,7 +4,6 @@ submit50:
     - !exclude "node_modules"
     - !exclude "venv"
     - !require README.md
-    - !require assessment.json
   style: false
 
 check50:

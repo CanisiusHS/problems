@@ -3,7 +3,6 @@ check50:
     - !exclude "*"
     - !require index.html
     - !require styles.css
-    - !require assessment.json
 
 submit50:
   files: *check50_files

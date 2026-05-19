@@ -2,4 +2,3 @@ check50:
   files: &check50_files
     - !exclude "*"
     - !require tasks.py
-    - !require assessment.json

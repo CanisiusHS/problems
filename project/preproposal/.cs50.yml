@@ -3,5 +3,4 @@ submit50:
   files: &submit50_files
     - !exclude "*"
     - !require README.md
-    - !require assessment.json
 
