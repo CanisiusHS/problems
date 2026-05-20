@@ -22,20 +22,17 @@ def all_green():
 
 @check50.check(compiles)
 def announces_win():
-    """announces a win when all five letters are green"""
-    out = check50.run("python3 wordle.py").stdin("ROBOT").stdin("ROBOT").stdout()
-    if "you win" not in out.lower():
-        raise check50.Mismatch(
-            expected="Hint:   GGGGG\n(you win!)\n",
-            actual=out,
-            help="When the guess matches the target exactly, print '(you win!)' after the hint.",
-        )
+    """announces a win with 'You Win!' on the line after the hint"""
+    check50.run("python3 wordle.py").stdin("ROBOT").stdin("ROBOT").stdout(
+        "[Hh]int:\\s*GGGGG\nYou Win!",
+        "Hint:   GGGGG\nYou Win!",
+    ).exit(0)
 
 
 @check50.check(compiles)
 def mixed_hint():
-    """produces the correct hint when letters partly match (SLATE / STARE → G.YYG)"""
-    check50.run("python3 wordle.py").stdin("SLATE").stdin("STARE").stdout(r"[Hh]int:\s*G\.YYG", "Hint:   G.YYG").exit(0)
+    """produces the correct hint when letters partly match (SLATE / STARE → GYG.G)"""
+    check50.run("python3 wordle.py").stdin("SLATE").stdin("STARE").stdout(r"[Hh]int:\s*GYG\.G", "Hint:   GYG.G").exit(0)
 
 
 @check50.check(compiles)
@@ -46,8 +43,8 @@ def only_one_yellow():
 
 @check50.check(compiles)
 def yellow_and_green():
-    """produces a mix of yellow, green, and gray (APPLE / HELLO → ..YG.)"""
-    check50.run("python3 wordle.py").stdin("APPLE").stdin("HELLO").stdout(r"[Hh]int:\s*\.\.YG\.", "Hint:   ..YG.").exit(0)
+    """produces a mix of yellow, green, and gray (APPLE / HELLO → .YYG.)"""
+    check50.run("python3 wordle.py").stdin("APPLE").stdin("HELLO").stdout(r"[Hh]int:\s*\.YYG\.", "Hint:   .YYG.").exit(0)
 
 
 @check50.check(compiles)
