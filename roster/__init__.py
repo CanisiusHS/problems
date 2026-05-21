@@ -48,9 +48,9 @@ def lists_all_players():
     """list-all shows roster (Josh Allen + Tyler Bass appear)"""
     run = check50.run("python3 roster.py")
     run.stdin("1")
-    run.stdin("4")
     run.stdout("Josh Allen", "Josh Allen")
     run.stdout("Tyler Bass", "Tyler Bass")
+    run.stdin("4")
     run.exit(0)
 
 
@@ -60,8 +60,8 @@ def jersey_lookup_found():
     run = check50.run("python3 roster.py")
     run.stdin("2")
     run.stdin("17")
-    run.stdin("4")
     run.stdout("Josh Allen", "Josh Allen")
+    run.stdin("4")
     run.exit(0)
 
 
@@ -71,8 +71,8 @@ def jersey_lookup_not_found():
     run = check50.run("python3 roster.py")
     run.stdin("2")
     run.stdin("99")
-    run.stdin("4")
     run.stdout("[Nn]o player.*99", "No player wears #99.")
+    run.stdin("4")
     run.exit(0)
 
 
@@ -82,10 +82,10 @@ def position_search_finds_receivers():
     run = check50.run("python3 roster.py")
     run.stdin("3")
     run.stdin("WR")
-    run.stdin("4")
     run.stdout("Khalil Shakir", "Khalil Shakir")
     run.stdout("Keon Coleman", "Keon Coleman")
     run.stdout("Curtis Samuel", "Curtis Samuel")
+    run.stdin("4")
     run.exit(0)
 
 
@@ -95,8 +95,8 @@ def position_search_is_case_insensitive():
     run = check50.run("python3 roster.py")
     run.stdin("3")
     run.stdin("qb")
-    run.stdin("4")
     run.stdout("Josh Allen", "Josh Allen")
+    run.stdin("4")
     run.exit(0)
 
 
@@ -106,6 +106,6 @@ def position_search_handles_no_matches():
     run = check50.run("python3 roster.py")
     run.stdin("3")
     run.stdin("P")
-    run.stdin("4")
     run.stdout("[Nn]o players", "No players at P.")
+    run.stdin("4")
     run.exit(0)
