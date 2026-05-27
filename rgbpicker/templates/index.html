@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RGB Color Picker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main>
+    <h1>RGB Color Picker</h1>
+    <p class="tagline">Enter any hex code. See the color and its complement.</p>
+
+    <form method="POST" autocomplete="off">
+      <input type="text" name="hex" placeholder="#ff0000" value="{{ submitted }}" autofocus>
+      <button type="submit">Show</button>
+    </form>
+
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {% if color %}
+      <div class="results">
+        <div class="card">
+          <div class="swatch" style="background: {{ color.hex }};"></div>
+          <p class="label">Your color</p>
+          <p class="hex">{{ color.hex }}</p>
+          <p class="rgb">RGB: {{ color.rgb[0] }}, {{ color.rgb[1] }}, {{ color.rgb[2] }}</p>
+        </div>
+        <div class="card">
+          <div class="swatch" style="background: {{ color.complement_hex }};"></div>
+          <p class="label">Complement</p>
+          <p class="hex">{{ color.complement_hex }}</p>
+          <p class="rgb">RGB: {{ color.complement_rgb[0] }}, {{ color.complement_rgb[1] }}, {{ color.complement_rgb[2] }}</p>
+        </div>
+      </div>
+    {% endif %}
+  </main>
+</body>
+</html>
