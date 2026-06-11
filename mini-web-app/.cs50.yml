@@ -1,0 +1,8 @@
+check50:
+  files:
+    - !require app.py
+    - !require templates/
+    - !exclude "*"
+    - !include app.py
+    - !include templates
+    - !include static

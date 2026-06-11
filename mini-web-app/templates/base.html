@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Mini Web App{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <h1>{% block heading %}My Mini Web App{% endblock %}</h1>
+    <nav>
+      <a href="{{ url_for('index') }}">Home</a>
+      <!-- Add more nav links as you add routes -->
+    </nav>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    <p>P8.0 Mini Web App &middot; Canisius AP CSP</p>
+  </footer>
+</body>
+</html>

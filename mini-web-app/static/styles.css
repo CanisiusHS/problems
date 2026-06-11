@@ -1,0 +1,55 @@
+/* Starter styles. Replace and extend.
+   Required: at least one class selector, the box model used intentionally,
+   and flexbox somewhere. */
+
+:root {
+  --navy: #041E42;
+  --gold: #B08D3F;
+  --bg: #fafafa;
+  --text: #222;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+header {
+  background: var(--navy);
+  color: white;
+  padding: 1.25rem 2rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+header nav a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+footer {
+  background: #eee;
+  color: #555;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 4rem;
+  font-size: 0.875rem;
+}
+
+/* Add your own styles below */
